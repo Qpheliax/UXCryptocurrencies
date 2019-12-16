@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/UXCryptocurrencies/static/css/main.b0c2e74d.chunk.css",
-    "main.js": "/UXCryptocurrencies/static/js/main.3ad0d930.chunk.js",
-    "main.js.map": "/UXCryptocurrencies/static/js/main.3ad0d930.chunk.js.map",
+    "main.js": "/UXCryptocurrencies/static/js/main.cf2693f7.chunk.js",
+    "main.js.map": "/UXCryptocurrencies/static/js/main.cf2693f7.chunk.js.map",
     "runtime-main.js": "/UXCryptocurrencies/static/js/runtime-main.74565f39.js",
     "runtime-main.js.map": "/UXCryptocurrencies/static/js/runtime-main.74565f39.js.map",
     "static/js/2.8e46f955.chunk.js": "/UXCryptocurrencies/static/js/2.8e46f955.chunk.js",
     "static/js/2.8e46f955.chunk.js.map": "/UXCryptocurrencies/static/js/2.8e46f955.chunk.js.map",
     "index.html": "/UXCryptocurrencies/index.html",
-    "precache-manifest.fc62210f0975da20d1bf43ce0132f185.js": "/UXCryptocurrencies/precache-manifest.fc62210f0975da20d1bf43ce0132f185.js",
+    "precache-manifest.f52591cf739fd8b2f05377967de25629.js": "/UXCryptocurrencies/precache-manifest.f52591cf739fd8b2f05377967de25629.js",
     "service-worker.js": "/UXCryptocurrencies/service-worker.js",
     "static/css/main.b0c2e74d.chunk.css.map": "/UXCryptocurrencies/static/css/main.b0c2e74d.chunk.css.map",
     "static/js/2.8e46f955.chunk.js.LICENSE": "/UXCryptocurrencies/static/js/2.8e46f955.chunk.js.LICENSE",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.74565f39.js",
     "static/js/2.8e46f955.chunk.js",
     "static/css/main.b0c2e74d.chunk.css",
-    "static/js/main.3ad0d930.chunk.js"
+    "static/js/main.cf2693f7.chunk.js"
   ]
 }
