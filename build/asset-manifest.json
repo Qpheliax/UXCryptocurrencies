@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/UXCryptocurrencies/static/css/main.b0c2e74d.chunk.css",
+    "main.js": "/UXCryptocurrencies/static/js/main.cf2693f7.chunk.js",
+    "main.js.map": "/UXCryptocurrencies/static/js/main.cf2693f7.chunk.js.map",
+    "runtime-main.js": "/UXCryptocurrencies/static/js/runtime-main.74565f39.js",
+    "runtime-main.js.map": "/UXCryptocurrencies/static/js/runtime-main.74565f39.js.map",
+    "static/js/2.8e46f955.chunk.js": "/UXCryptocurrencies/static/js/2.8e46f955.chunk.js",
+    "static/js/2.8e46f955.chunk.js.map": "/UXCryptocurrencies/static/js/2.8e46f955.chunk.js.map",
+    "index.html": "/UXCryptocurrencies/index.html",
+    "precache-manifest.f52591cf739fd8b2f05377967de25629.js": "/UXCryptocurrencies/precache-manifest.f52591cf739fd8b2f05377967de25629.js",
+    "service-worker.js": "/UXCryptocurrencies/service-worker.js",
+    "static/css/main.b0c2e74d.chunk.css.map": "/UXCryptocurrencies/static/css/main.b0c2e74d.chunk.css.map",
+    "static/js/2.8e46f955.chunk.js.LICENSE": "/UXCryptocurrencies/static/js/2.8e46f955.chunk.js.LICENSE",
+    "static/media/binancecoin.png": "/UXCryptocurrencies/static/media/binancecoin.2893a9eb.png",
+    "static/media/bitcoin.png": "/UXCryptocurrencies/static/media/bitcoin.7027eb31.png",
+    "static/media/bitcoincash.png": "/UXCryptocurrencies/static/media/bitcoincash.87e0237e.png",
+    "static/media/bitcoinsv.png": "/UXCryptocurrencies/static/media/bitcoinsv.f0f2c300.png",
+    "static/media/eos.png": "/UXCryptocurrencies/static/media/eos.057cf7cf.png",
+    "static/media/ethereum.png": "/UXCryptocurrencies/static/media/ethereum.b3929524.png",
+    "static/media/litecoin.png": "/UXCryptocurrencies/static/media/litecoin.94625ff2.png",
+    "static/media/logo.png": "/UXCryptocurrencies/static/media/logo.4b918a13.png",
+    "static/media/tether.png": "/UXCryptocurrencies/static/media/tether.f32a4650.png",
+    "static/media/xrp.png": "/UXCryptocurrencies/static/media/xrp.f2f5acd1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74565f39.js",
+    "static/js/2.8e46f955.chunk.js",
+    "static/css/main.b0c2e74d.chunk.css",
+    "static/js/main.cf2693f7.chunk.js"
+  ]
+}
