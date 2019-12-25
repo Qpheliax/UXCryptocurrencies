@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/UXCryptocurrencies/static/css/main.b0c2e74d.chunk.css",
-    "main.js": "/UXCryptocurrencies/static/js/main.cf2693f7.chunk.js",
-    "main.js.map": "/UXCryptocurrencies/static/js/main.cf2693f7.chunk.js.map",
+    "main.css": "/UXCryptocurrencies/static/css/main.46e890c6.chunk.css",
+    "main.js": "/UXCryptocurrencies/static/js/main.c2a88972.chunk.js",
+    "main.js.map": "/UXCryptocurrencies/static/js/main.c2a88972.chunk.js.map",
     "runtime-main.js": "/UXCryptocurrencies/static/js/runtime-main.74565f39.js",
     "runtime-main.js.map": "/UXCryptocurrencies/static/js/runtime-main.74565f39.js.map",
-    "static/js/2.8e46f955.chunk.js": "/UXCryptocurrencies/static/js/2.8e46f955.chunk.js",
-    "static/js/2.8e46f955.chunk.js.map": "/UXCryptocurrencies/static/js/2.8e46f955.chunk.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/UXCryptocurrencies/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.f66f7851.chunk.js": "/UXCryptocurrencies/static/js/2.f66f7851.chunk.js",
+    "static/js/2.f66f7851.chunk.js.map": "/UXCryptocurrencies/static/js/2.f66f7851.chunk.js.map",
     "index.html": "/UXCryptocurrencies/index.html",
-    "precache-manifest.f52591cf739fd8b2f05377967de25629.js": "/UXCryptocurrencies/precache-manifest.f52591cf739fd8b2f05377967de25629.js",
+    "precache-manifest.40a82e746a9365df37112264a9030f37.js": "/UXCryptocurrencies/precache-manifest.40a82e746a9365df37112264a9030f37.js",
     "service-worker.js": "/UXCryptocurrencies/service-worker.js",
-    "static/css/main.b0c2e74d.chunk.css.map": "/UXCryptocurrencies/static/css/main.b0c2e74d.chunk.css.map",
-    "static/js/2.8e46f955.chunk.js.LICENSE": "/UXCryptocurrencies/static/js/2.8e46f955.chunk.js.LICENSE",
+    "static/css/2.17e5ed98.chunk.css.map": "/UXCryptocurrencies/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.46e890c6.chunk.css.map": "/UXCryptocurrencies/static/css/main.46e890c6.chunk.css.map",
+    "static/js/2.f66f7851.chunk.js.LICENSE": "/UXCryptocurrencies/static/js/2.f66f7851.chunk.js.LICENSE",
     "static/media/binancecoin.png": "/UXCryptocurrencies/static/media/binancecoin.2893a9eb.png",
     "static/media/bitcoin.png": "/UXCryptocurrencies/static/media/bitcoin.7027eb31.png",
     "static/media/bitcoincash.png": "/UXCryptocurrencies/static/media/bitcoincash.87e0237e.png",
@@ -25,8 +27,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.74565f39.js",
-    "static/js/2.8e46f955.chunk.js",
-    "static/css/main.b0c2e74d.chunk.css",
-    "static/js/main.cf2693f7.chunk.js"
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.f66f7851.chunk.js",
+    "static/css/main.46e890c6.chunk.css",
+    "static/js/main.c2a88972.chunk.js"
   ]
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/UXCryptocurrencies/precache-manifest.f52591cf739fd8b2f05377967de25629.js"
+  "/UXCryptocurrencies/precache-manifest.40a82e746a9365df37112264a9030f37.js"
 );
 
 self.addEventListener('message', (event) => {

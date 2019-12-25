@@ -1,12 +1,12 @@
 import React from "react";
-import './Com.css';
+import './Comparison.css';
 import axios from 'axios';
 
 import {Link} from 'react-router-dom';
 
 const API = 'https://my.api.mockaroo.com/cryptocurrency-data.json?key=8eb9e6f0';
 
-export class Com extends React.Component { 
+export class Comparison extends React.Component { 
 
   constructor(props) {
     super(props);    
@@ -70,4 +70,4 @@ render() {
   }
   }
  
-  export default Com;
+  export default Comparison;
