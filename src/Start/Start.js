@@ -53,7 +53,7 @@ export class Start extends React.Component {
   render() {
     const { loading } = this.state;
     return (
-
+      
       <div className="Main">
 
         <div className="mright">

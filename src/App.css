@@ -18,9 +18,10 @@ body {
 }
 
 .logo {
-    padding: 10px;
-    width: 30%;
-    height: 30%;
+    padding: 15px;
+    width: auto;
+    height: 120px;
+    margin-left: 10px;
     
     
 
@@ -37,18 +38,20 @@ body {
     order: 2;
     flex: 1 1 auto;
     margin-top: 40px;
+    margin-left: 350px;
     
     
 }
 
 .item {
     padding: 0px;
-    text-decoration: none;
+    
     
 }
 
 .item:hover {
     color: gray;
+    
 }
 
 .right {
@@ -80,8 +83,9 @@ body {
   
   .Nlink {
       padding-right: 1em;
-      padding-left: 1em
+      padding-left: 1em;
   }
+  
 
 }
 
@@ -115,12 +119,17 @@ body {
     align-content: center;
     align-items: center;
     margin-bottom: 170px;
+    
 }
 
 .img {
     flex: 0 1 auto;
-    padding: 3px
+    padding: 3px;
+    
 }
+.img { transition: all .2s ease-in-out; }
+.img:hover { transform: scale(1.1); 
+    filter: brightness(99%);}
 
 .img,
 .infoText {
@@ -138,7 +147,7 @@ body {
     font-size: 1.5em
 }
 .arrow {
-    display: inline-block;
+    display: block;
     width: 15px;
     height: 15px;
     border-top: 4px solid #000;
@@ -206,7 +215,7 @@ h1 {
         width: 80px
     }
     .logosE {
-        width: 40px
+        width: 45px
     }
     .infoText p {
       text-align: center;
@@ -214,12 +223,16 @@ h1 {
       padding: 0
   }
 }
-
-
-
-.cryptotable {
-    padding-top: 5em
+@media (max-width:1450px) {
+    .Main {
+        margin-left: -8em;
+        margin-top: -2em;
+    }
+    .cryptoimgs {
+        margin-top: 5em;
+    }
 }
+
 
 div.blueTable {
     height: 200%
@@ -232,14 +245,15 @@ div.blueTable {
 	font-family:Georgia;
 	font-size:1.5em;
 	font-weight:bold;
-    padding:13px 32px;
+    padding:11px 30px;
     text-decoration:none;
     color:#fff;
 
 }
 .Dlink:hover {
-    background-color:#acb0c4;
+    
     color:#000;
+    
 }
 .Dlink:active {
 	position:relative;
@@ -250,11 +264,6 @@ div.blueTable {
     font-weight: 700
 }
 
-.cryptotable {
-    padding-top: 2em;
-    padding-left: 5em;
-    padding-right: 5em
-}
 
 div.blueTable {
     border: 1px solid #f7dee4;
@@ -262,29 +271,34 @@ div.blueTable {
     width: 100%;
     height: 100%;
     text-align: center;
-    border-collapse: collapse
+    border-collapse: collapse;
+    
+    
 }
 
 .divTable.blueTable .divTableCell,
 .divTable.blueTable .divTableHead {
     border: 1px solid #aaa;
-    padding: 3px 2px
+    padding: 3px 2px;
+    
 }
 
 .divTable.blueTable .divTableBody .divTableCell {
     font-size: 13px
 }
-
+/*#923348;*/
 .divTable.blueTable .divTableHeading {
-    background: #923348;
-    border-bottom: 2px solid #444
+    background: #587ab8;
+    border-bottom: 2px solid #444;
+    
+    
 }
 
 .divTable.blueTable .divTableHeading .divTableHead {
     font-size: 15px;
     font-weight: 700;
     color: #fff;
-    border-left: 2px solid #d0e4f5
+    border-left: 0.1px solid #d0e4f5;
 }
 
 .divTable.blueTable .divTableHeading .divTableHead:first-child {
@@ -329,14 +343,19 @@ div.blueTable {
 }
 
 .TableHeader {
-    padding-top: 1.5em
+    padding-top: 0.5em;
 }
 
 .upper {
-    padding-top: 2em;
-    text-align: center
+    padding: 2em 2em 0em 0em;
+    display:block;
+    float: right;
+    position: relative;
+    margin-right: 3em;
+    
 }
 
+/*  Tar bort blev pixlig pil vid högre upplösning
 span.Backarrow {
     height: 50px;
     line-height: 50px;
@@ -345,8 +364,7 @@ span.Backarrow {
     padding: 0 10px;
     color: #fff;
     background-color: #44477d;
-    position: relative;
-    display: inline-block;
+    position: absolute;
     cursor: pointer
 }
 
@@ -372,7 +390,7 @@ span.Backarrow:hover:after {
     border-style: solid;
     border-width: 25px 35px 25px 0
 }
-
+*/
 .moreInfo {
     text-align: center;
     padding-top:1.2em;

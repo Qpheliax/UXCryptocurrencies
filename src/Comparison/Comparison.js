@@ -1,6 +1,7 @@
 import React from "react";
 import './Comparison.css';
 import axios from 'axios';
+import { WaveLoading } from 'react-loadingg'
 
 import {Link} from 'react-router-dom';
 
@@ -29,9 +30,9 @@ componentDidMount() {
 render() {
   if (this.state.loading) {
     return(
-      <div>
-        <p> Loading... </p>
-      </div>
+      <div> 
+        <WaveLoading type={"bars"} color={"#ccccff"} size={"large"}/>
+      </div> 
     )
   }
 
@@ -58,8 +59,8 @@ render() {
               <div className="divTableHead">Name</div>
               <div className="divTableHead">Market Cap</div>
               <div className="divTableHead">Price</div>
-              <div className="divTableHead">Volume(in24)</div>
-              <div className="divTableHead">Change(in24)</div>
+              <div className="divTableHead">Volume (24H)</div>
+              <div className="divTableHead">Change (24H)</div>
               </div>
               </div>
               {table}

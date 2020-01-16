@@ -2,12 +2,8 @@ import React from "react";
 import './Top3.css';
 import axios from 'axios';
 import TopGraph from "./TopGraph";
-import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
-} from 'recharts';
-import SelectedData from './SelectedData';
-import { validate } from "@babel/types";
 import Top3Table from './Top3Table';
+import { WaveLoading } from 'react-loadingg';
 
 const API = 'https://my.api.mockaroo.com/cryptocurrency-data.json?key=8eb9e6f0';
 
@@ -22,6 +18,8 @@ export class Top3 extends React.Component {
       Currentprice: '',
       Currentmarket: '',
       Currentvalue: '',
+      Currentrank: '',
+      Currentpercent24h: '',
       GraphSelectedData: 'Volume24h',
       Currentdescr: ''
     }
@@ -34,8 +32,7 @@ export class Top3 extends React.Component {
   componentDidMount() {
 
     const currentid = this.props.match.params.id;
-    console.log(currentid);
-    console.log(this.state.list);
+   
 
     axios.get(API)
       .then(result => this.setState({
@@ -43,6 +40,8 @@ export class Top3 extends React.Component {
         Currentprice: result.data[currentid - 1].quotes.EUR.price,
         Currentmarket: result.data[currentid - 1].quotes.EUR.market_cap,
         Currentvalue: result.data[currentid - 1].quotes.EUR.volume_24h,
+        Currentrank: result.data[currentid - 1].rank,
+        Currentpercent24h: result.data[currentid - 1].quotes.EUR.percentage_change_24h,
         Currentdescr: result.data[currentid - 1].description
       }));
     
@@ -55,20 +54,25 @@ export class Top3 extends React.Component {
   handleDataChange = event =>{
     this.setState({GraphSelectedData: event.target.value})
   }
+
+ 
   render() {
     if (this.state.loading) {
       return (
-        <div>
-          <p> Loading... </p>
-        </div>
-      )
+       
+        
+        <div> 
+        <WaveLoading type={"bars"} color={"#ccccff"} size={"large"}/>
+      </div> 
+       
+      );
     }
     
     return (
       <React.Fragment>
-        <div className="upper">
-            <span className="Backarrow" onClick={this.navBack}>Back</span>
-          </div>
+        {/*<div className="upper">
+            {/*<span className="Backarrow" onClick={this.navBack}>Back</span>
+    </div>*/}
         <div className="cryptotable">
   
           <div className="TableHeader"><h2>Selected currency:</h2></div>
@@ -79,7 +83,7 @@ export class Top3 extends React.Component {
                 <div className="divTableHead">Name</div>
                 <div className="divTableHead">Price</div>
                 <div className="divTableHead">Market</div>
-                <div className="divTableHead">Value</div>
+                <div className="divTableHead">Volume</div>
               </div>
             </div>
             <div className="divTableBody">
@@ -95,9 +99,14 @@ export class Top3 extends React.Component {
           <Top3Table type={'Market'} list={this.state.list}/>
           <Top3Table type={'Volume'} list={this.state.list}/>
           </div>
-          <TopGraph />
+          <TopGraph ClickedCurrency={this.state.Currentname}
+                    CurrentPrice = {this.state.Currentprice}
+                    CurrentMarket = {this.state.Currentmarket}
+                    CurrentValue = {this.state.Currentvalue}
+                    CurrentRank = {this.state.Currentrank}
+                    CurrentPercent24h = {this.state.Currentpercent24h}/>
           <div className="curr_descr">
-          <h2 style={{marginLeft: "375px"}}>{this.state.Currentname}</h2>
+          <h2>{this.state.Currentname}</h2>
           <p>{this.state.Currentdescr}</p>
           </div>
         </React.Fragment>

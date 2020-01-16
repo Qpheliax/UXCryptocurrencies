@@ -1,24 +1,81 @@
 .graph {
-    margin-top:175px;
-    display: block;
-    float:right;
     
+    margin-left: 150px;
+    display: inline-block;
 }
 
+.selectButton {
+    
+    margin-left: 254px;
+    width: 300px;
+    height: auto;
+    display: block;
+}
 .cryptotable {
     
     display:block;
-    width: 500px; 
+    float: left;
+    width: 367px;
+    margin: 1.2em 0em 1em 4em;
+    
+    
+    
 }
 
-.upper {
-    display: block;
+.curr_descr {
+    
+    margin: 1em 0px 5em 685px;
+    width: 550px;
+    
+}
+
+/*.upper {
+    display: inline-block;
     float: right;
     margin-right: 30px;
+    padding-top: 2em;
+    text-align: center;
     
     
 }
-.curr_descr {
-    margin: 360px 300px 100px 750px;
+*/
+
+@media (max-width:1400px) {
+
+.graph{
+
+    margin-left: 60px;
     
+}
+.cryptotable {
+    margin-left: 2.4em;
+}
+.curr_descr {
+    
+    margin: 1em 500px 5em 575px;
+    width: 
+    
+}
+
+}
+
+@media (min-width:1700px) {
+.graph{
+        margin-left: 185px;
+        margin-top: 10px;
+    }
+    
+    .cryptotable {
+        
+        display:block;
+        float: left;
+        width: 367px;
+        margin: 2em 0em 1em 6em;  
+    }
+    .curr_descr {
+    
+        margin: 1em 500px 5em 750px;
+        width: 
+        
+    }
 }

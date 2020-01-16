@@ -6,6 +6,9 @@ import Comparison from './Comparison/Comparison';
 import Top3 from './Top3/Top3';
 import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 
+
+
+
 function App() {
 
   return (
@@ -18,8 +21,8 @@ function App() {
             <img className="logo" src={logo} alt="logo" />
           </div>
           <div className="right">
-            <NavLink className="Nlink" to="/UXCryptocurrencies" ><section className="item" >Home</section></NavLink>
-            <NavLink className="Nlink" to="/comparison" ><section className="item" >Cryptocurrencies</section></NavLink>
+            <NavLink className="Nlink" to="/UXCryptocurrencies" style={{ textDecoration: 'none' }} ><section className="item" >Home</section></NavLink>
+            <NavLink className="Nlink" to="/comparison" style={{ textDecoration: 'none' }} ><section className="item" >Cryptocurrencies</section></NavLink>
           </div>
         </div>
         <Route exact path='/UXCryptocurrencies' component={Start} />
@@ -28,8 +31,8 @@ function App() {
             render={props => (
               <Start {...props} startData={this.state.någonset} />
             )}
-          />
-          */}
+            />*/}
+          
           
 
         <Route exact path='/comparison' component={Comparison} />
