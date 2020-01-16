@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4faa3e2fca584a204abce9388e266fd3",
+    "revision": "b3e266037db4370a221c1175261d60b2",
     "url": "/UXCryptocurrencies/index.html"
   },
   {
-    "revision": "8685af29ffb46239be75",
+    "revision": "1a42964e7098b022e88f",
     "url": "/UXCryptocurrencies/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "13a6da210efb12a64a51",
-    "url": "/UXCryptocurrencies/static/css/main.0ab81e9d.chunk.css"
+    "revision": "21352c659c8b38bbbdcb",
+    "url": "/UXCryptocurrencies/static/css/main.04639a1a.chunk.css"
   },
   {
-    "revision": "8685af29ffb46239be75",
-    "url": "/UXCryptocurrencies/static/js/2.6fc89fdb.chunk.js"
+    "revision": "1a42964e7098b022e88f",
+    "url": "/UXCryptocurrencies/static/js/2.83a6aa11.chunk.js"
   },
   {
-    "revision": "e31ea36c6aa2dad0e6db17c0bf09a7a8",
-    "url": "/UXCryptocurrencies/static/js/2.6fc89fdb.chunk.js.LICENSE"
+    "revision": "2d28a1352cd43974bf9c8ef0fe309c6e",
+    "url": "/UXCryptocurrencies/static/js/2.83a6aa11.chunk.js.LICENSE"
   },
   {
-    "revision": "13a6da210efb12a64a51",
-    "url": "/UXCryptocurrencies/static/js/main.aeb063a3.chunk.js"
+    "revision": "21352c659c8b38bbbdcb",
+    "url": "/UXCryptocurrencies/static/js/main.a9cd3256.chunk.js"
   },
   {
     "revision": "319e0fb0443eb94ce4be",
