@@ -1,7 +1,6 @@
 import React from "react";
-import './Comparison.css';
 import axios from 'axios';
-import { WaveLoading } from 'react-loadingg'
+import { WaveLoading } from 'react-loadingg';
 
 import {Link} from 'react-router-dom';
 

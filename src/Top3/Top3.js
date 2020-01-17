@@ -20,7 +20,7 @@ export class Top3 extends React.Component {
       Currentvalue: '',
       Currentrank: '',
       Currentpercent24h: '',
-      GraphSelectedData: 'Volume24h',
+      GraphSelectedData: '',
       Currentdescr: ''
     }
   }
@@ -32,8 +32,6 @@ export class Top3 extends React.Component {
   componentDidMount() {
 
     const currentid = this.props.match.params.id;
-   
-
     axios.get(API)
       .then(result => this.setState({
         Currentname: result.data[currentid - 1].Name,
@@ -44,38 +42,32 @@ export class Top3 extends React.Component {
         Currentpercent24h: result.data[currentid - 1].quotes.EUR.percentage_change_24h,
         Currentdescr: result.data[currentid - 1].description
       }));
-    
+
     axios.get(API)
       .then(res => {
-        let result = res.data; 
+        let result = res.data;
         this.setState({ list: result, loading: false });
       })
   }
-  handleDataChange = event =>{
-    this.setState({GraphSelectedData: event.target.value})
+  handleDataChange = event => {
+    this.setState({ GraphSelectedData: event.target.value })
   }
 
- 
+
   render() {
     if (this.state.loading) {
       return (
-       
-        
-        <div> 
-        <WaveLoading type={"bars"} color={"#ccccff"} size={"large"}/>
-      </div> 
-       
+        <div>
+          <WaveLoading type={"bars"} color={"#ccccff"} size={"large"} />
+        </div>
       );
     }
-    
+
     return (
       <React.Fragment>
-        {/*<div className="upper">
-            {/*<span className="Backarrow" onClick={this.navBack}>Back</span>
-    </div>*/}
         <div className="cryptotable">
-  
-          <div className="TableHeader"><h2>Selected currency:</h2></div>
+
+          <div className="TableHeader"><h2>Selected Currency:</h2></div>
 
           <div className="divTable blueTable">
             <div className="divTableHeading">
@@ -95,52 +87,22 @@ export class Top3 extends React.Component {
               </div>
             </div>
           </div>
-          <Top3Table type={'Price'} list={this.state.list}/>
-          <Top3Table type={'Market'} list={this.state.list}/>
-          <Top3Table type={'Volume'} list={this.state.list}/>
-          </div>
-          <TopGraph ClickedCurrency={this.state.Currentname}
-                    CurrentPrice = {this.state.Currentprice}
-                    CurrentMarket = {this.state.Currentmarket}
-                    CurrentValue = {this.state.Currentvalue}
-                    CurrentRank = {this.state.Currentrank}
-                    CurrentPercent24h = {this.state.Currentpercent24h}/>
-          <div className="curr_descr">
+          <Top3Table type={'Price'} list={this.state.list} />
+          <Top3Table type={'Market'} list={this.state.list} />
+        </div>
+        <TopGraph ClickedCurrency={this.state.Currentname}
+          CurrentPrice={this.state.Currentprice}
+          CurrentMarket={this.state.Currentmarket}
+          CurrentValue={this.state.Currentvalue}
+          CurrentRank={this.state.Currentrank}
+          CurrentPercent24h={this.state.Currentpercent24h} />
+        <div className="curr_descr">
           <h2>{this.state.Currentname}</h2>
           <p>{this.state.Currentdescr}</p>
-          </div>
-        </React.Fragment>
+        </div>
+      </React.Fragment>
     );
-
   }
 }
 
 export default Top3;
-
-/* <div className="graph">
-          <BarChart
-            width={1200}
-            height={400}
-            data={this.state.list}
-            margin={{
-              top: 50, right: 30, left: 200, bottom: 5,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="Name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Bar dataKey="quotes.EUR.price" fill="#8884d8" />
-            
-          </BarChart>
-          </div>
-          <div className="upper">
-            <span className="Backarrow" onClick={this.navBack}>Back</span>
-          </div>
-          <SelectedData />
-          
-          <div className="curr_descr">
-          <h2 style={{marginLeft: "375px"}}>{this.state.Currentname}</h2>
-          <p>{this.state.Currentdescr}</p>
-          </div>*/

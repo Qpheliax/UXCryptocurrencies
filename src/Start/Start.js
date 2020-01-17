@@ -1,5 +1,4 @@
 import React from "react";
-import './Start.css';
 import bitcoin from '../img/icons/bitcoin.png';
 import binancecoin from '../img/icons/binancecoin.png';
 import bitcoincash from '../img/icons/bitcoincash.png';
@@ -10,7 +9,7 @@ import litecoin from '../img/icons/litecoin.png';
 import stellar from '../img/icons/stellar.png';
 import tether from '../img/icons/tether.png';
 import xrp from '../img/icons/xrp.png';
-
+import { WaveLoading } from 'react-loadingg';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -46,18 +45,16 @@ export class Start extends React.Component {
           CryptoDesc: result.data[id].description
         }));
     });
-
   }
 
 
   render() {
+
     const { loading } = this.state;
     return (
-      
+
       <div className="Main">
-
         <div className="mright">
-
           <div className="cryptoimgs">
 
             <div className="img"><img className="logos" id="0" onClick={this.setInfo} src={bitcoin} alt="Bitcoin" /></div>
@@ -75,15 +72,15 @@ export class Start extends React.Component {
 
         <div className="mleft">
           <div className="based" >
-            {loading ? <div>Loading...</div> : <div>
+            {loading ? <WaveLoading type={"bars"} color={"#ccccff"} size={"large"} /> : <div>
               <div> <h1> {this.state.CryptoName} </h1> </div>
               <div> {this.state.CryptoDesc} </div>
               <div className='moreInfo' ><Link className='Dlink' to="/comparison">Detailed information</Link></div>
             </div>}
           </div>
         </div>
-        {/* Main */}
       </div>
+
     )
   }
 }

@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend
 } from 'recharts';
-import Top3 from './Top3';
 import SelectedData from './SelectedData';
 import './Top3.css';
-import { HelpBlock } from 'react-bootstrap';
-
 
 class TopGraph extends Component {
   state = {
     allData: [],
     CryptoChart: [],
     selectedData: 'Volume24h'
-    
-
   };
 
   async componentDidMount() {
@@ -23,7 +18,7 @@ class TopGraph extends Component {
     const data = await response.json();
 
     let cryptodata = [];
-    
+
     data.map(item => {
 
       cryptodata.push({
@@ -37,7 +32,7 @@ class TopGraph extends Component {
       )
     }
     );
-    
+
     cryptodata = cryptodata.filter(val => val.Rank <= 5);
     const selectedCurrency = this.props.ClickedCurrency;
     const selectedCurrPrice = this.props.CurrentPrice;
@@ -46,52 +41,49 @@ class TopGraph extends Component {
     const selectedCurrRank = this.props.CurrentRank;
     const selectedCurrPerc24h = this.props.CurrentPercent24h;
 
-    const SelectedCurrencyArr = {Name: selectedCurrency, Price: selectedCurrPrice, MarketCap: selectedCurrMarket, 
-                                Volume24h: selectedCurrValue, Rank: selectedCurrRank, Change24h: selectedCurrPerc24h};
-    
+    const SelectedCurrencyArr = {
+      Name: selectedCurrency, Price: selectedCurrPrice, MarketCap: selectedCurrMarket,
+      Volume24h: selectedCurrValue, Rank: selectedCurrRank, Change24h: selectedCurrPerc24h
+    };
+
 
     cryptodata.push(SelectedCurrencyArr);
-    
-    /*  FÖRSÖK filtra brot duplicate kolla länk
-    const uniqueSet = new Set(cryptodata);
-    const backToArray = [...uniqueSet];*/
+
     function removeDuplicates(originalArray, prop) {
       var newArray = [];
-      var lookupObject  = {};
- 
-      for(var i in originalArray) {
-         lookupObject[originalArray[i][prop]] = originalArray[i];
+      var lookupObject = {};
+
+      for (var i in originalArray) {
+        lookupObject[originalArray[i][prop]] = originalArray[i];
       }
- 
-      for(i in lookupObject) {
-          newArray.push(lookupObject[i]);
+
+      for (i in lookupObject) {
+        newArray.push(lookupObject[i]);
       }
-       return newArray;
-  }
- 
- const uniqueArray = removeDuplicates(cryptodata, "Name");
-   
+      return newArray;
+    }
+
+    const uniqueArray = removeDuplicates(cryptodata, "Name");
+
     this.setState(
       {
         allData: data,
         CryptoChart: uniqueArray
       }
-    ); 
+    );
   }
 
   handleDataChange = event => {
     this.setState({ selectedData: event.target.value })
   }
-  
-  /*1050 och 500height på chart*/
- 
+
+
   render() {
-    
-  
+
     return (
       <React.Fragment>
         <div className="graph">
-        
+
           <BarChart
             width={750}
             height={475}
@@ -99,7 +91,6 @@ class TopGraph extends Component {
             margin={{
               top: 150, right: 50, left: 50, bottom: 5,
             }}
-            
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="Name" />
@@ -107,14 +98,12 @@ class TopGraph extends Component {
             <Tooltip />
             <Legend />
             <Bar dataKey={this.state.selectedData} fill="#8884d8" />
-
           </BarChart>
-         
-          
-          
+
           <SelectedData GraphSelectedData={this.state.selectedData} onDataChange={this.handleDataChange} />
+          <div id="graphDesc"> Graph shows top 5 ranked currencies and selected currency
           </div>
-       
+        </div>
       </React.Fragment>
     );
   }

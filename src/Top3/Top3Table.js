@@ -1,6 +1,4 @@
-//skicka data table data
 import React, { Component } from "react";
-//destructing blir till 5 constanter
 
 class Top3Table extends Component {
   render() {
@@ -12,9 +10,7 @@ class Top3Table extends Component {
     if (type === "Market") {
       sortedList = list.slice(0, 10).sort((a, b) => b.quotes.EUR.market_cap - a.quotes.EUR.market_cap).slice(0, 3);
     }
-    if (type === "Volume") {
-      sortedList = list.slice(0, 10).sort((a, b) => b.quotes.EUR.volume_24h).slice(0, 3);
-    }
+    
     return (
       <React.Fragment>
         <div className="TableHeader"><h2>Top 3 by {type}:</h2></div>
@@ -53,6 +49,5 @@ class Top3Table extends Component {
   }
 
 }
-
 
 export default Top3Table;
