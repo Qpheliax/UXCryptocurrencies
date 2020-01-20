@@ -6,6 +6,7 @@ import Comparison from './Comparison/Comparison';
 import Top3 from './Top3/Top3';
 import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 
+{/*Navigationssytem med länkar och logotyp*/}
 function App() {
 
   return (

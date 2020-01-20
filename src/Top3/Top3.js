@@ -5,6 +5,9 @@ import TopGraph from "./TopGraph";
 import Top3Table from './Top3Table';
 import { WaveLoading } from 'react-loadingg';
 
+{/*Denna sida sammanbinder/renderar Top3Table,TopGraph och SelectedData.
+Här skapas även tabellen "Selected Currency" och beskrivning om vald valuta.*/}
+
 const API = 'https://my.api.mockaroo.com/cryptocurrency-data.json?key=8eb9e6f0';
 
 export class Top3 extends React.Component {

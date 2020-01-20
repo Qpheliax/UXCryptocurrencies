@@ -5,6 +5,8 @@ import {
 import SelectedData from './SelectedData';
 import './Top3.css';
 
+{/*Visar graf innehållande valda valutan och de 5 högst rankade valutornas värden.
+Om valda valutan är 1 av de 5 topvalutorna filtreras dubblett bort.*/}
 class TopGraph extends Component {
   state = {
     allData: [],

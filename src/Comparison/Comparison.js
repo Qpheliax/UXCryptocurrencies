@@ -1,8 +1,9 @@
 import React from "react";
 import axios from 'axios';
 import { WaveLoading } from 'react-loadingg';
-
 import {Link} from 'react-router-dom';
+
+{/* Sida bestående av en tabell, där 10 valutor visas med olika värden*/}
 
 const API = 'https://my.api.mockaroo.com/cryptocurrency-data.json?key=8eb9e6f0';
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+{/* Select knapp skapas, där användaren kan välja vilka datatyper som ska visas i grafen.*/}
 class SelectData extends Component {
   state = {};
 

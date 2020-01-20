@@ -13,6 +13,8 @@ import { WaveLoading } from 'react-loadingg';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
+{/*Starsida med klickbara kryptoikoner som visar information om specifik valuta*/}
+
 const API = 'https://my.api.mockaroo.com/cryptocurrency-data.json?key=8eb9e6f0';
 
 export class Start extends React.Component {

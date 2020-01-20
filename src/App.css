@@ -51,30 +51,6 @@ body {
     padding: 0
 }
 
-@media (min-width:600px) {
-    .Nav {
-        flex-direction: row;
-        letter-spacing: .4em;
-        font-size: 1em
-    }
-    .navleft {
-        display: block
-    }
-    .item {
-      display: inline;
-      font-size: 2em;
-      padding: 10px;
-      text-decoration: none;
-      color: #000
-  }
-  
-  .Nlink {
-      padding-right: 1em;
-      padding-left: 1em;
-  }
-}
-
-
 .Main {
     padding-top: 1em;
     padding-left: .5em;
@@ -131,6 +107,7 @@ body {
     margin: 0;
     font-size: 1.5em
 }
+
 .arrow {
     display: block;
     width: 15px;
@@ -169,44 +146,6 @@ h1 {
     text-align: center
 }
 
-@media (min-width:600px) {
-    .Main {
-        padding-top: 3em;
-        padding-left: 12em;
-        padding-right: 8em;
-        flex-direction: row
-    }
-    .mleft {
-        order: 1;
-        flex: 2 1 50%;
-        padding: 20px;
-        margin-top: 2em;
-        margin-right: -30px
-    }
-    .mright {
-        order: 2;
-        flex: 1 1 20%;
-        padding-left: 100px
-    }
-    .logos {
-        width: 80px
-    }
-    .logosE {
-        width: 45px
-    }
-    .infoText p {
-      text-align: center;
-      font-size: 1.7em;
-      padding: 0
-  }
-}
-@media (max-width:1450px) {
-    .Main {
-        margin-left: -8em;
-        margin-top: -2em;
-    }
-}
-
 div.blueTable {
     height: 200%
 }
@@ -222,6 +161,7 @@ div.blueTable {
     text-decoration:none;
     color:#fff;
 }
+
 .Dlink:hover {
     color:#000;
 }
@@ -323,4 +263,64 @@ div.blueTable {
 .moreInfo {
     text-align: center;
     padding-top:1.2em;
+}
+
+
+@media (min-width:600px) {
+    .Nav {
+        flex-direction: row;
+        letter-spacing: .4em;
+        font-size: 1em
+    }
+    .navleft {
+        display: block
+    }
+    .item {
+      display: inline;
+      font-size: 2em;
+      padding: 10px;
+      text-decoration: none;
+      color: #000
+  }
+  
+  .Nlink {
+      padding-right: 1em;
+      padding-left: 1em;
+  }
+    .Main {
+        padding-top: 3em;
+        padding-left: 12em;
+        padding-right: 8em;
+        flex-direction: row
+    }
+    .mleft {
+        order: 1;
+        flex: 2 1 50%;
+        padding: 20px;
+        margin-top: 2em;
+        margin-right: -30px
+    }
+    .mright {
+        order: 2;
+        flex: 1 1 20%;
+        padding-left: 100px
+    }
+    .logos {
+        width: 80px
+    }
+    .logosE {
+        width: 45px
+    }
+    .infoText p {
+      text-align: center;
+      font-size: 1.7em;
+      padding: 0
+  }
+
+}
+@media (max-width:1450px) {
+    .Main {
+        margin-left: -8em;
+        margin-top: -2em;
+    }
 }

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+{/*Top 3 tabeller som visar ledande valutor gällande pris och marknadsvärde.
+Utförs med hjälp av en sorteringsfunktion som visar de tre starkaste valutorna. */}
 class Top3Table extends Component {
   render() {
     const { type, list } = this.props;
@@ -36,10 +38,10 @@ class Top3Table extends Component {
                     </div>
                   ) : type === "Market" ? (
                     <div className="divTableCell" key={market}>{crypto.quotes.EUR.market_cap}<span> M</span></div>
-                  ) : (
-                        <div className="divTableCell" key={volume}>{crypto.quotes.EUR.volume_24h}<span> M</span></div>
-                      )
+                  )
+                  : ('')
                   }
+
                 </div>
               </div>
             ))}
