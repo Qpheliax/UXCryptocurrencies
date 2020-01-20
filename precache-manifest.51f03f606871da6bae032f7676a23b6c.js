@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b5780f2bd472e4290a068e8e33b23e6",
+    "revision": "3ea485f72322f0a3c4eba09aa34482c9",
     "url": "/UXCryptocurrencies/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/UXCryptocurrencies/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "cab8b360dba9b15dc2b2",
-    "url": "/UXCryptocurrencies/static/css/main.d3925fcf.chunk.css"
+    "revision": "6f4e81418f27ae1763c9",
+    "url": "/UXCryptocurrencies/static/css/main.4eec1fae.chunk.css"
   },
   {
     "revision": "2f04363ef14058327080",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/UXCryptocurrencies/static/js/2.3d470a08.chunk.js.LICENSE"
   },
   {
-    "revision": "cab8b360dba9b15dc2b2",
-    "url": "/UXCryptocurrencies/static/js/main.34badbf2.chunk.js"
+    "revision": "6f4e81418f27ae1763c9",
+    "url": "/UXCryptocurrencies/static/js/main.1c686d68.chunk.js"
   },
   {
     "revision": "319e0fb0443eb94ce4be",
